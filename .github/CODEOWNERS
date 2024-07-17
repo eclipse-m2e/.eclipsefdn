@@ -1,5 +1,5 @@
 # The releng team is by default the owner of everything.
-*             @{{ org }}/eclipsefdn-releng
+*             @eclipse-m2e/eclipsefdn-releng
 
 # Otterdog related configurations are also owned by the security team.
-/otterdog/**  @{{ org }}/eclipsefdn-security
+/otterdog/**  @eclipse-m2e/eclipsefdn-security
