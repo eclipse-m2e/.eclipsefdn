@@ -13,7 +13,7 @@ orgs.newOrg('eclipse-m2e') {
   },
   secrets+: [
     orgs.newOrgSecret('M2E_GITLAB_API_TOKEN') {
-      value: "********",
+      value: "pass:bots/technology.m2e/gitlab.eclipse.org/api-token",
     },
   ],
   _repositories+:: [
