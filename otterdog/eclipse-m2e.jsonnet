@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-m2e') {
+orgs.newOrg('technology.m2e', 'eclipse-m2e') {
   settings+: {
     blog: "https://www.eclipse.org/m2e/",
     description: "M2Eclipse provides tight integration for Apache Maven into the Eclipse IDE",
