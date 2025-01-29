@@ -49,7 +49,6 @@ orgs.newOrg('technology.m2e', 'eclipse-m2e') {
       ],
     },
     orgs.newRepo('m2e-core') {
-      default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       has_discussions: true,
