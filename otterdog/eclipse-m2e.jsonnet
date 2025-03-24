@@ -144,5 +144,17 @@ orgs.newOrg('technology.m2e', 'eclipse-m2e') {
         },
       ],
     },
+    orgs.newRepo('m2e-core-tests') {
+      delete_branch_on_merge: false,
+      web_commit_signoff_required: false,
+      description: "Test suite for m2e",
+      forked_repository: "tesla/m2e-core-tests",
+      fork_default_branch_only: true,
+      has_wiki: false,
+      homepage: "www.eclipse.org/m2e",
+      workflows+: {
+        enabled: false,
+      },
+    },
   ],
 }
