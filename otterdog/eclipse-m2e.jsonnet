@@ -155,7 +155,7 @@ orgs.newOrg('technology.m2e', 'eclipse-m2e') {
       has_wiki: false,
       homepage: "www.eclipse.org/m2e",
       workflows+: {
-        enabled: false,
+        default_workflow_permissions: "read",
       },
     },
   ],
