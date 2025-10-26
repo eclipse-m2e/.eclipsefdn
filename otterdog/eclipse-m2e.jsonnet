@@ -19,7 +19,7 @@ orgs.newOrg('technology.m2e', 'eclipse-m2e') {
   _repositories+:: [
     orgs.newRepo('.github') {
       allow_merge_commit: true,
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       dependabot_alerts_enabled: false,
       web_commit_signoff_required: false,
       workflows+: {
@@ -30,7 +30,7 @@ orgs.newOrg('technology.m2e', 'eclipse-m2e') {
       allow_merge_commit: true,
       allow_update_branch: false,
       default_branch: "master",
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       dependabot_alerts_enabled: false,
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "master",
@@ -49,7 +49,7 @@ orgs.newOrg('technology.m2e', 'eclipse-m2e') {
       ],
     },
     orgs.newRepo('m2e-core') {
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       has_discussions: true,
       squash_merge_commit_title: "PR_TITLE",
@@ -69,7 +69,7 @@ orgs.newOrg('technology.m2e', 'eclipse-m2e') {
     },
     orgs.newRepo('m2e-discovery-catalog') {
       default_branch: "master",
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       gh_pages_build_type: "workflow",
       web_commit_signoff_required: false,
@@ -98,7 +98,7 @@ orgs.newOrg('technology.m2e', 'eclipse-m2e') {
       allow_merge_commit: true,
       allow_update_branch: false,
       default_branch: "master",
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       dependabot_alerts_enabled: false,
       web_commit_signoff_required: false,
       workflows+: {
@@ -107,7 +107,7 @@ orgs.newOrg('technology.m2e', 'eclipse-m2e') {
     },
     orgs.newRepo('m2e-wtp') {
       default_branch: "master",
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       dependabot_alerts_enabled: false,
       web_commit_signoff_required: false,
       workflows+: {
@@ -117,7 +117,7 @@ orgs.newOrg('technology.m2e', 'eclipse-m2e') {
     orgs.newRepo('m2e-wtp-jpa') {
       allow_merge_commit: true,
       default_branch: "master",
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       dependabot_alerts_enabled: false,
       web_commit_signoff_required: false,
       workflows+: {
@@ -127,7 +127,7 @@ orgs.newOrg('technology.m2e', 'eclipse-m2e') {
     orgs.newRepo('org.eclipse.m2e.workspace') {
       allow_merge_commit: true,
       default_branch: "master",
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       has_issues: false,
       web_commit_signoff_required: false,
@@ -147,7 +147,7 @@ orgs.newOrg('technology.m2e', 'eclipse-m2e') {
     orgs.newRepo('m2e-core-tests') {
       allow_squash_merge: false,
       default_branch: "master",
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       web_commit_signoff_required: false,
       description: "Test suite for m2e",
       forked_repository: "tesla/m2e-core-tests",
