@@ -147,6 +147,7 @@ orgs.newOrg('technology.m2e', 'eclipse-m2e') {
     orgs.newRepo('m2e-core-tests') {
       allow_squash_merge: false,
       delete_branch_on_merge: true,
+      dependabot_security_updates_enabled: true,
       web_commit_signoff_required: false,
       description: "Test suite for m2e",
       forked_repository: "tesla/m2e-core-tests",
